@@ -26,5 +26,10 @@
   "typings": "ng2-pdfjs-viewer.d.ts",
   "peerDependencies": {
     "@angular/core": "^11.2.3"
+  },
+  "__processed_by_ivy_ngcc__": {
+    "main": "8.2.14",
+    "typings": "8.2.14",
+    "module": "8.2.14"
   }
 }

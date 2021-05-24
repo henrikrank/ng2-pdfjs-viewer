@@ -1,12 +1,8 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('@angular/common'),require('@angular/core'),require('@angular/common')) :
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('@angular/common')) :
     typeof define === 'function' && define.amd ? define(['exports', '@angular/core', '@angular/common'], factory) :
     (global = global || self, factory(global['ng2-pdfjs-viewer'] = {}, global.core, global.common));
-}(this, function (exports, core, common,ɵngcc0,ɵngcc1) { 
-const _c0 = ["iframe"];
-const _c1 = ["title", "ng2-pdfjs-viewer", "width", "100%", "height", "100%", 3, "hidden"];
-const _c2 = ["iframe", ""];
-'use strict';
+}(this, function (exports, core, common) { 'use strict';
 
     /**
      * @fileoverview added by tsickle
@@ -359,6 +355,12 @@ const _c2 = ["iframe", ""];
             //   pagemode = ${this.errorMessage}
             // `);
         };
+        PdfJsViewerComponent.decorators = [
+            { type: core.Component, args: [{
+                        selector: 'ng2-pdfjs-viewer',
+                        template: "<iframe title=\"ng2-pdfjs-viewer\" [hidden]=\"externalWindow || (!externalWindow && !pdfSrc)\" #iframe width=\"100%\" height=\"100%\"></iframe>"
+                    },] }
+        ];
         PdfJsViewerComponent.propDecorators = {
             iframe: [{ type: core.ViewChild, args: ['iframe', { static: true },] }],
             viewerId: [{ type: core.Input }],
@@ -397,96 +399,6 @@ const _c2 = ["iframe", ""];
             page: [{ type: core.Input }],
             pdfSrc: [{ type: core.Input }]
         };
-PdfJsViewerComponent.ngComponentDef = ɵngcc0.ɵɵdefineComponent({ type: PdfJsViewerComponent, selectors: [["ng2-pdfjs-viewer"]], factory: function PdfJsViewerComponent_Factory(t) { return new (t || PdfJsViewerComponent)(); }, viewQuery: function PdfJsViewerComponent_Query(rf, ctx) { if (rf & 1) {
-        ɵngcc0.ɵɵstaticViewQuery(_c0, true);
-    } if (rf & 2) {
-        var _t;
-        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadViewQuery()) && (ctx.iframe = _t.first);
-    } }, inputs: { externalWindow: "externalWindow", showSpinner: "showSpinner", openFile: "openFile", download: "download", viewBookmark: "viewBookmark", print: "print", fullScreen: "fullScreen", find: "find", useOnlyCssZoom: "useOnlyCssZoom", errorOverride: "errorOverride", errorAppend: "errorAppend", diagnosticLogs: "diagnosticLogs", page: "page", pdfSrc: "pdfSrc", viewerId: "viewerId", viewerFolder: "viewerFolder", downloadFileName: "downloadFileName", startDownload: "startDownload", startPrint: "startPrint", zoom: "zoom", nameddest: "nameddest", pagemode: "pagemode", lastPage: "lastPage", rotatecw: "rotatecw", rotateccw: "rotateccw", cursor: "cursor", scroll: "scroll", spread: "spread", locale: "locale", errorMessage: "errorMessage", externalWindowOptions: "externalWindowOptions" }, outputs: { onBeforePrint: "onBeforePrint", onAfterPrint: "onAfterPrint", onDocumentLoad: "onDocumentLoad", onPageChange: "onPageChange" }, consts: 2, vars: 1, template: function PdfJsViewerComponent_Template(rf, ctx) { if (rf & 1) {
-        ɵngcc0.ɵɵelement(0, "iframe", _c1, _c2);
-    } if (rf & 2) {
-        ɵngcc0.ɵɵproperty("hidden", ctx.externalWindow || !ctx.externalWindow && !ctx.pdfSrc);
-    } }, encapsulation: 2 });
-/*@__PURE__*/ ɵngcc0.ɵsetClassMetadata(PdfJsViewerComponent, [{
-        type: core.Component,
-        args: [{
-                selector: 'ng2-pdfjs-viewer',
-                template: "<iframe title=\"ng2-pdfjs-viewer\" [hidden]=\"externalWindow || (!externalWindow && !pdfSrc)\" #iframe width=\"100%\" height=\"100%\"></iframe>"
-            }]
-    }], function () { return []; }, { onBeforePrint: [{
-            type: core.Output
-        }], onAfterPrint: [{
-            type: core.Output
-        }], onDocumentLoad: [{
-            type: core.Output
-        }], onPageChange: [{
-            type: core.Output
-        }], externalWindow: [{
-            type: core.Input
-        }], showSpinner: [{
-            type: core.Input
-        }], openFile: [{
-            type: core.Input
-        }], download: [{
-            type: core.Input
-        }], viewBookmark: [{
-            type: core.Input
-        }], print: [{
-            type: core.Input
-        }], fullScreen: [{
-            type: core.Input
-        }], find: [{
-            type: core.Input
-        }], useOnlyCssZoom: [{
-            type: core.Input
-        }], errorOverride: [{
-            type: core.Input
-        }], errorAppend: [{
-            type: core.Input
-        }], diagnosticLogs: [{
-            type: core.Input
-        }], page: [{
-            type: core.Input
-        }], page: [], pdfSrc: [{
-            type: core.Input
-        }], pdfSrc: [], PDFViewerApplicationOptions: [], PDFViewerApplication: [], receiveMessage: [], ngOnInit: [], refresh: [], loadPdf: [], viewerTab: [], iframe: [{
-            type: core.ViewChild,
-            args: ['iframe', { static: true }]
-        }], viewerId: [{
-            type: core.Input
-        }], viewerFolder: [{
-            type: core.Input
-        }], downloadFileName: [{
-            type: core.Input
-        }], startDownload: [{
-            type: core.Input
-        }], startPrint: [{
-            type: core.Input
-        }], zoom: [{
-            type: core.Input
-        }], nameddest: [{
-            type: core.Input
-        }], pagemode: [{
-            type: core.Input
-        }], lastPage: [{
-            type: core.Input
-        }], rotatecw: [{
-            type: core.Input
-        }], rotateccw: [{
-            type: core.Input
-        }], cursor: [{
-            type: core.Input
-        }], scroll: [{
-            type: core.Input
-        }], spread: [{
-            type: core.Input
-        }], locale: [{
-            type: core.Input
-        }], errorMessage: [{
-            type: core.Input
-        }], externalWindowOptions: [{
-            type: core.Input
-        }] });
         return PdfJsViewerComponent;
     }());
 
@@ -509,25 +421,19 @@ PdfJsViewerComponent.ngComponentDef = ɵngcc0.ɵɵdefineComponent({ type: PdfJsV
                 ngModule: PdfJsViewerModule
             };
         };
-PdfJsViewerModule.ngModuleDef = ɵngcc0.ɵɵdefineNgModule({ type: PdfJsViewerModule });
-/*@__PURE__*/ ɵngcc0.ɵɵsetNgModuleScope(PdfJsViewerModule, { declarations: [PdfJsViewerComponent], imports: [ɵngcc1.CommonModule], exports: [PdfJsViewerComponent] });
-/*@__PURE__*/ ɵngcc0.ɵsetClassMetadata(PdfJsViewerModule, [{
-        type: core.NgModule,
-        args: [{
-                imports: [
-                    common.CommonModule
-                ],
-                declarations: [
-                    PdfJsViewerComponent
-                ],
-                exports: [
-                    PdfJsViewerComponent
-                ]
-            }]
-    }], function () { return []; }, null);
-PdfJsViewerModule.ngInjectorDef = ɵngcc0.ɵɵdefineInjector({ factory: function PdfJsViewerModule_Factory(t) { return new (t || PdfJsViewerModule)(); }, imports: [[
-            common.CommonModule
-        ]] });
+        PdfJsViewerModule.decorators = [
+            { type: core.NgModule, args: [{
+                        imports: [
+                            common.CommonModule
+                        ],
+                        declarations: [
+                            PdfJsViewerComponent
+                        ],
+                        exports: [
+                            PdfJsViewerComponent
+                        ]
+                    },] }
+        ];
         return PdfJsViewerModule;
     }());
 
@@ -537,5 +443,3 @@ PdfJsViewerModule.ngInjectorDef = ɵngcc0.ɵɵdefineInjector({ factory: function
     Object.defineProperty(exports, '__esModule', { value: true });
 
 }));
-
-//# sourceMappingURL=ng2-pdfjs-viewer.umd.js.map

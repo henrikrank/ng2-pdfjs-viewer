@@ -1,5 +1,4 @@
 import { EventEmitter, ElementRef } from '@angular/core';
-import * as ɵngcc0 from '@angular/core';
 export declare class PdfJsViewerComponent {
     iframe: ElementRef;
     viewerId: string;
@@ -48,7 +47,4 @@ export declare class PdfJsViewerComponent {
     ngOnInit(): void;
     refresh(): void;
     private loadPdf;
-    static ngComponentDef: ɵngcc0.ɵɵComponentDefWithMeta<PdfJsViewerComponent, "ng2-pdfjs-viewer", never, { 'externalWindow': "externalWindow", 'showSpinner': "showSpinner", 'openFile': "openFile", 'download': "download", 'viewBookmark': "viewBookmark", 'print': "print", 'fullScreen': "fullScreen", 'find': "find", 'useOnlyCssZoom': "useOnlyCssZoom", 'errorOverride': "errorOverride", 'errorAppend': "errorAppend", 'diagnosticLogs': "diagnosticLogs", 'page': "page", 'pdfSrc': "pdfSrc", 'viewerId': "viewerId", 'viewerFolder': "viewerFolder", 'downloadFileName': "downloadFileName", 'startDownload': "startDownload", 'startPrint': "startPrint", 'zoom': "zoom", 'nameddest': "nameddest", 'pagemode': "pagemode", 'lastPage': "lastPage", 'rotatecw': "rotatecw", 'rotateccw': "rotateccw", 'cursor': "cursor", 'scroll': "scroll", 'spread': "spread", 'locale': "locale", 'errorMessage': "errorMessage", 'externalWindowOptions': "externalWindowOptions" }, { 'onBeforePrint': "onBeforePrint", 'onAfterPrint': "onAfterPrint", 'onDocumentLoad': "onDocumentLoad", 'onPageChange': "onPageChange" }, never>;
 }
-
-//# sourceMappingURL=ng2-pdfjs-viewer.component.d.ts.map

@@ -287,11 +287,15 @@
   margin: 1px auto -8px auto;
   position: relative;
   overflow: visible;
-  border: 9px solid transparent;
+  /* border: 9px solid transparent; */
   background-clip: content-box;
-  -o-border-image: url(images/shadow.png) 9 9 repeat;
-     border-image: url(images/shadow.png) 9 9 repeat;
+  /* -o-border-image: url(images/shadow.png) 9 9 repeat;
+     border-image: url(images/shadow.png) 9 9 repeat; */
   background-color: white;
+  border-radius: 40px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: 0px 8px 16px -4px rgb(0 0 0 / 15%);
 }
 
 .pdfViewer.removePageBorders .page {
@@ -421,8 +425,8 @@ html {
 body {
   height: 100%;
   width: 100%;
-  background-color: #404040;
-  background-image: url(images/texture.png);
+  background-color: transparent;
+  /* background-image: url(images/texture.png); */
 }
 
 body,
@@ -619,11 +623,17 @@ html[dir='rtl'] #sidebarContent {
   box-shadow: inset 1px 0 0 hsla(0,0%,0%,.25);
 }
 
+#viewer {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
 #viewerContainer {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   position: absolute;
-  top: 32px;
+  /* top: 32px; */
+  top: 0;
   right: 0;
   bottom: 0;
   left: 0;
@@ -662,10 +672,15 @@ html[dir='rtl'] #outerContainer.sidebarOpen #viewerContainer:not(.pdfPresentatio
   right: 0;
   z-index: 9999;
   cursor: default;
+  display: flex;
+  justify-content: center;
+  top: 20px;
 }
 
 #toolbarContainer {
-  width: 100%;
+  /* width: 100%; */
+  width: 460px;
+  max-width: 100%;
 }
 
 #toolbarSidebar {
@@ -704,13 +719,16 @@ html[dir='rtl'] #sidebarResizer {
 }
 
 #toolbarContainer, .findbar, .secondaryToolbar {
+  /* display: none;  */
   position: relative;
   height: 32px;
-  background-color: #474747; /* fallback */
-  background-image: url(images/texture.png),
-                    linear-gradient(hsla(0,0%,32%,.99), hsla(0,0%,27%,.95));
+  padding: 10px;
+  border-radius: 16px;
+  background-color: #41419B; /* fallback */
+  /* background-image: url(images/texture.png),
+                    linear-gradient(hsla(0,0%,32%,.99), hsla(0,0%,27%,.95)); */
 }
-html[dir='ltr'] #toolbarContainer, .findbar, .secondaryToolbar {
+/* html[dir='ltr'] #toolbarContainer, .findbar, .secondaryToolbar {
   box-shadow: inset 0 1px 1px hsla(0,0%,0%,.15),
               inset 0 -1px 0 hsla(0,0%,100%,.05),
               0 1px 0 hsla(0,0%,0%,.15),
@@ -721,7 +739,7 @@ html[dir='rtl'] #toolbarContainer, .findbar, .secondaryToolbar {
               inset 0 -1px 0 hsla(0,0%,100%,.05),
               0 1px 0 hsla(0,0%,0%,.15),
               0 1px 1px hsla(0,0%,0%,.1);
-}
+} */
 
 #toolbarViewer {
   height: 32px;
@@ -731,8 +749,9 @@ html[dir='rtl'] #toolbarContainer, .findbar, .secondaryToolbar {
   position: relative;
   width: 100%;
   height: 4px;
-  background-color: #333;
-  border-bottom: 1px solid #333;
+  background-color: #41419B;
+  border-bottom: 1px solid #41419B;
+  display: none;
 }
 
 #loadingBar .progress {
@@ -806,7 +825,10 @@ html[dir='rtl'] #toolbarContainer, .findbar, .secondaryToolbar {
   height: auto;
 }
 html[dir='ltr'] .findbar {
-  left: 68px;
+  /* left: 68px; */
+  left: 50%;
+  top: 74px;
+  transform: translateX(-28.5%);
 }
 html[dir='rtl'] .findbar {
   right: 68px;
@@ -939,10 +961,11 @@ html[dir='ltr'] .doorHangerRight:before {
 }
 
 #toolbarViewerMiddle {
-  position: absolute;
+  /* position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+          transform: translateX(-50%); */
+  float: right;
 }
 
 html[dir='ltr'] #toolbarViewerLeft,
@@ -966,6 +989,10 @@ html[dir='rtl'] #toolbarViewerRight > *,
 html[dir='rtl'] .findbar * {
   position: relative;
   float: right;
+}
+
+#toolbarViewerRight {
+  display: none;
 }
 
 html[dir='ltr'] .splitToolbarButton {
