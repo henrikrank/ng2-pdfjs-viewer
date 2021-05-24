@@ -1,27 +1,39 @@
 {
-  "name": "ng2-pdfjs-viewer",
-  "version": "1.0.0",
-  "scripts": {
-    "build": "gulp build",
-    "build:watch": "gulp",
-    "docs": "npm run docs:build",
-    "docs:build": "compodoc -p tsconfig.json -n ng2-pdfjs-viewer -d docs --hideGenerator",
-    "docs:serve": "npm run docs:build -- -s",
-    "docs:watch": "npm run docs:build -- -s -w",
-    "lint": "tslint --type-check --project tsconfig.json src/**/*.ts",
-    "lite": "lite-server",
-    "playground:build": "tsc -p playground -w",
-    "playground": "concurrently \"npm run build:watch\" \"npm run playground:build\" \"npm run lite\"",
-    "test": "tsc && karma start"
+  "_from": "ng2-pdfjs-viewer",
+  "_id": "ng2-pdfjs-viewer@6.0.1",
+  "_inBundle": false,
+  "_integrity": "sha512-Mf4ZzCzhLi5fLJFi034TcywtolRTKARHfkqX/ovXQyIuT6R9L2wPGJdeFG0fOJ58mWt6KUNWhTsa0Kbd8Oe7JA==",
+  "_location": "/ng2-pdfjs-viewer",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "ng2-pdfjs-viewer",
+    "name": "ng2-pdfjs-viewer",
+    "escapedName": "ng2-pdfjs-viewer",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/intbot/ng2-pdfjs-viewer"
-  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/ng2-pdfjs-viewer/-/ng2-pdfjs-viewer-6.0.1.tgz",
+  "_shasum": "1a7a9f41c3e45197bdd374ede4b239a307b0f589",
+  "_spec": "ng2-pdfjs-viewer",
+  "_where": "C:\\Users\\skywa\\Documents\\Montonio\\slice-angular",
   "author": {
     "name": "Code1",
     "email": "codehippie1@gmail.com"
   },
+  "bugs": {
+    "url": "https://github.com/intbot/ng2-pdfjs-viewer/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "<p align=\"center\">\r   <a href=\"https://www.npmjs.com/package/ng2-pdfjs-viewer\">\r     <img src=\"https://img.shields.io/npm/dm/ng2-pdfjs-viewer.svg?style=flat\" alt=\"downloads\">\r   </a>\r   <a href=\"https://badge.fury.io/js/ng2-pdfjs-viewer\">\r     <img src=\"https://badge.fury.io/js/ng2-pdfjs-viewer.svg\" alt=\"npm version\">\r   </a>\r </p>",
+  "homepage": "https://github.com/intbot/ng2-pdfjs-viewer#readme",
   "keywords": [
     "angular",
     "ng",
@@ -31,53 +43,16 @@
     "viewer.html"
   ],
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/intbot/ng2-pdfjs-viewer/issues"
+  "main": "ng2-pdfjs-viewer.umd.js",
+  "module": "index.js",
+  "name": "ng2-pdfjs-viewer",
+  "peerDependencies": {
+    "@angular/core": "^11.2.3"
   },
-  "devDependencies": {
-    "@angular/common": "^11.2.3",
-    "@angular/compiler": "^11.2.3",
-    "@angular/compiler-cli": "^11.2.3",
-    "@angular/core": "^11.2.3",
-    "@angular/platform-browser": "^11.2.3",
-    "@angular/platform-browser-dynamic": "^11.2.3",
-    "@compodoc/compodoc": "^1.1.11",
-    "@types/jasmine": "3.6.4",
-    "@types/node": "^14.14.31",
-    "codelyzer": "~6.0.1",
-    "concurrently": "^6.0.0",
-    "core-js": "^3.9.0",
-    "fs-extra": "^9.1.0",
-    "gulp": "4.0.2",
-    "gulp-minify": "^3.1.0",
-    "gulp-rename": "^2.0.0",
-    "gulp-rollup": "^2.17.0",
-    "gulp4-run-sequence": "^1.0.1",
-    "jasmine-core": "~3.6.0",
-    "jasmine-spec-reporter": "~6.0.0",
-    "karma": "~6.1.1",
-    "karma-chrome-launcher": "~3.1.0",
-    "karma-cli": "~2.0.0",
-    "karma-coverage-istanbul-reporter": "^3.0.3",
-    "karma-jasmine": "~4.0.1",
-    "karma-jasmine-html-reporter": "^1.5.4",
-    "lite-server": "^2.6.1",
-    "node-sass": "^5.0.0",
-    "node-sass-tilde-importer": "^1.0.2",
-    "node-watch": "^0.7.1",
-    "protractor": "~7.0.0",
-    "rollup": "^2.39.1",
-    "rxjs": "^6.6.6",
-    "systemjs": "^6.8.3",
-    "ts-node": "~9.1.1",
-    "tslint": "~5.20.1",
-    "typescript": "^4.0.5",
-    "zone.js": "^0.11.4"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/intbot/ng2-pdfjs-viewer.git"
   },
-  "engines": {
-    "node": ">=6.0.0"
-  },
-  "dependencies": {
-    "tsickle": "^0.39.1"
-  }
+  "typings": "ng2-pdfjs-viewer.d.ts",
+  "version": "6.0.1"
 }
