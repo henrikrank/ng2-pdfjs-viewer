@@ -3623,7 +3623,7 @@ function scrollIntoView(element, spot) {
     }
   }
 
-  parent.scrollTop = offsetY;
+  // parent.scrollTop = offsetY;
 }
 
 function watchScroll(viewAreaElement, callback) {
