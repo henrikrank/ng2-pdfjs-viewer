@@ -2389,6 +2389,14 @@ html[dir='rtl'] #documentPropertiesOverlay .row > * {
   }
 }
 
+@media all and (max-width: 830px) {
+  .toolbar {
+    top: 50px;
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+}
+
 @media all and (max-width: 770px) {
   #outerContainer .hiddenLargeView {
     display: none;
@@ -2404,6 +2412,10 @@ html[dir='rtl'] #documentPropertiesOverlay .row > * {
   }
   #outerContainer .visibleMediumView {
     display: inherit;
+  }
+
+  .pdfViewer .page {
+    border-radius: 12px;
   }
 }
 
