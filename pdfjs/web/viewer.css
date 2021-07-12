@@ -636,8 +636,8 @@ html[dir='rtl'] #sidebarContent {
 }
 
 #viewer {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 100px;
+  padding-bottom: 50px;
 }
 
 #viewerContainer {
@@ -2533,6 +2533,8 @@ html[dir='rtl'] #documentPropertiesOverlay .row > * {
 }
 
 @media all and (max-width: 770px) {
+
+
   #outerContainer .hiddenLargeView {
     display: none;
   }
@@ -2543,6 +2545,25 @@ html[dir='rtl'] #documentPropertiesOverlay .row > * {
 }
 
 @media all and (max-width: 700px) {
+
+  #scaleSelectContainer {
+    display: none;
+  }
+
+  #viewer {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+
+  .toolbar {
+    top: 0;
+  }
+
+  #toolbarContainer {
+    border-radius: 0;
+    width: 1000px;
+  }
+
   #outerContainer .hiddenMediumView {
     display: none;
   }
@@ -2575,7 +2596,5 @@ html[dir='rtl'] #documentPropertiesOverlay .row > * {
 }
 
 @media all and (max-width: 535px) {
-  #scaleSelectContainer {
-    display: none;
-  }
+
 }
